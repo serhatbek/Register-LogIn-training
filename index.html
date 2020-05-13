@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register&LogIn</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="nav__wrapper">
+          <div class="logo-box">
+            <a href="#" class="logo__link">
+              <h1 class="logo__heading">
+                <span class="logo--blue">W</span>
+                <span class="logo--yellow">Y</span>
+                <p class="logo__text">Building better worlds</p>
+              </h1>
+            </a>
+          </div>
+
+          <ul class="nav__items">
+            <li class="nav__item"><a class="nav__link" href="">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Planets</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Colonies</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Schedules</a>
+            </li>
+          </ul>
+
+          <button class="btn btn-login">LOGIN</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="register__wrapper">
+      <div class="container flex-center">
+        <form action="" method="POST">
+          <h2>REGISTER</h2>
+          <div class="user-info">
+            <label for="email">Email</label>
+            <br />
+            <input type="email" name="email" id="email" class="form-input" />
+            <p>Please enter your email</p>
+          </div>
+
+          <div class="user-info">
+            <label for="user-password">Password</label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form-input"
+            />
+            <p>Please enter your password</p>
+          </div>
+
+          <div class="user-info">
+            <label for="password">Confirm Password</label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form-input"
+            />
+            <p>Please confirm your password</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

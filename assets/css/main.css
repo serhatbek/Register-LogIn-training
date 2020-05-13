@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.6rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  outline: none;
+  border-radius: 0.6rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: #1b2f38;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+/*******************************************/
+
+nav {
+  background-color: #073b4c;
+  padding: 0.8rem;
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-box {
+  width: 8rem;
+  text-align: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 0.6rem;
+}
+
+.logo__link {
+  text-decoration: none;
+}
+
+.logo--blue,
+.logo--yellow {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.logo--blue {
+  color: #118ab2;
+}
+
+.logo--yellow {
+  color: #ffd166;
+}
+
+.logo__text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #e2e2e2;
+}
+
+.nav__items {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav__link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  color: #e2e2e2;
+  border: none;
+  transition: all 0.3s ease-out;
+}
+
+.nav__link:hover {
+  color: #ffd166;
+  border-bottom: 1px solid #ffd166;
+}
+
+.register__wrapper {
+  height: 90vh;
+  background-image: url(/assets/img/bg-image.jpg);
+  opacity: 0.9;
+  /* clip-path: polygon(0 0, 100% 31%, 100% 85%, 0% 100%); */
+}
+
+form {
+  width: 80%;
+  background-color: #2787ba;
+  border-radius: 0.6rem;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1b2f38;
+  text-align: center;
+}
+
+form h2 {
+  font-size: 1.5rem;
+}
+
+.user-info {
+  text-align: left;
+}
+
+.form-input {
+  width: 50%;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: #e2e2e2;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  background-color: #1c485a;
+  border: none;
+  outline: none;
+}
