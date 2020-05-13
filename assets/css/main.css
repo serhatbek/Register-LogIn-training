@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap');
 
 *,
 *::before,
@@ -12,8 +12,16 @@ html {
   font-size: 100%;
 }
 
+:root {
+  --text-color: #e2e2e2;
+  --link-hover: #f439a6;
+  --form-color: #f439a67e;
+  --input-bg-transparent: #1c485a94;
+}
+
 body {
   font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.2rem;
 }
 
 .container {
@@ -29,12 +37,14 @@ body {
 }
 
 .btn {
+  background-color: #fe6365;
   padding: 1rem 2rem;
   outline: none;
   border-radius: 0.6rem;
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
-  color: #1b2f38;
+  letter-spacing: 0.2rem;
+  color: var(--text-color);
   border: none;
   cursor: pointer;
   transition: 0.3s ease-out;
@@ -64,7 +74,7 @@ nav {
 .logo-box {
   width: 8rem;
   text-align: center;
-  border: 1px solid #e2e2e2;
+  border: 1px solid var(--text-color);
   border-radius: 0.6rem;
   padding: 0.3rem;
 }
@@ -76,7 +86,7 @@ nav {
 .logo--blue,
 .logo--yellow {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .logo--blue {
@@ -88,9 +98,9 @@ nav {
 }
 
 .logo__text {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-weight: 400;
-  color: #e2e2e2;
+  color: var(--text-color);
 }
 
 .nav__items {
@@ -102,14 +112,14 @@ nav {
   font-size: 1.2rem;
   text-decoration: none;
   padding: 0.6rem 1rem;
-  color: #e2e2e2;
+  color: var(--text-color);
   border: none;
   transition: all 0.3s ease-out;
 }
 
 .nav__link:hover {
-  color: #ffd166;
-  border-bottom: 1px solid #ffd166;
+  color: var(--link-hover);
+  border-bottom: 1px solid var(--link-hover);
 }
 
 .register__wrapper {
@@ -124,23 +134,24 @@ nav {
 
 form {
   width: 50%;
-  background-color: #2787ba;
+  background-color: var(--form-color);
   border-radius: 0.6rem;
   padding: 1.5rem;
   font-size: 0.8rem;
   font-weight: 700;
-  color: #1b2f38;
+  color: var(--text-color);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 15%;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 form h2 {
   font-size: 1.5rem;
+  letter-spacing: 0.6rem;
 }
 
 .user-info {
@@ -158,11 +169,28 @@ form h2 {
   width: 100%;
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
-  color: #e2e2e2;
+  letter-spacing: 0.2rem;
+  color: var(--text-color);
   padding: 0.6rem;
   border-radius: 0.6rem;
-  background-color: #1c485a;
+  background-color: var(--input-bg-transparent);
   border: none;
   outline: none;
   margin: 0.2rem 0;
+}
+
+.login-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 5rem;
+  transform: translate(-50% 050%);
 }

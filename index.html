@@ -31,7 +31,7 @@
             </li>
           </ul>
 
-          <button class="btn btn-login">LOGIN</button>
+          <button id="loginBtn" class="btn btn-login">LOGIN</button>
         </div>
       </div>
     </nav>
@@ -43,7 +43,13 @@
           <div class="user-info">
             <label for="email">Email</label>
             <br />
-            <input type="email" name="email" id="email" class="form-input" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-input"
+              required
+            />
             <p>Please enter your email</p>
           </div>
 
@@ -55,6 +61,7 @@
               name="password"
               id="password"
               class="form-input"
+              required
             />
             <p>Please enter your password</p>
           </div>
@@ -67,9 +74,47 @@
               name="password"
               id="password"
               class="form-input"
+              required
             />
             <p>Please confirm your password</p>
           </div>
+
+          <button id="registerSubmitBtn" class="btn">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="login-modal">
+      <div class="container flex-center">
+        <form action="" method="POST">
+          <h2>REGISTER</h2>
+          <div class="user-info">
+            <label for="email">Email</label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-input"
+              required
+            />
+            <p>Please enter your email</p>
+          </div>
+
+          <div class="user-info">
+            <label for="user-password">Password</label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form-input"
+              required
+            />
+            <p>Please enter your password</p>
+          </div>
+
+          <button id="loginSubmitBtn" class="btn">SUBMIT</button>
         </form>
       </div>
     </div>
