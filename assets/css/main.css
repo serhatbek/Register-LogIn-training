@@ -199,6 +199,7 @@ nav {
 .login-form {
   width: 400px;
   font-weight: 400;
+  background-color: var(--link-hover);
 }
 
 .login-modal.show {
