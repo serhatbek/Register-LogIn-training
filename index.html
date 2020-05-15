@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register&LogIn</title>
+    <script
+      src="https://kit.fontawesome.com/f0d4beef0b.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
@@ -38,85 +42,100 @@
 
     <div class="register__wrapper">
       <div class="container flex-center">
-        <form action="" method="POST">
+        <form id="regForm" action="/" method="POST" class="form">
           <h2>REGISTER</h2>
           <div class="user-info">
-            <label for="email">Email</label>
+            <label for="email"><i class="fas fa-envelope"></i> Email</label>
             <br />
             <input
               type="email"
               name="email"
-              id="email"
+              id="registerEmail"
               class="form-input"
+              autocomplete="on"
               required
             />
             <p>Please enter your email</p>
           </div>
 
           <div class="user-info">
-            <label for="user-password">Password</label>
+            <label for="user-password"
+              ><i class="fas fa-lock"></i> Password</label
+            >
             <br />
             <input
               type="password"
               name="password"
-              id="password"
+              id="registerPassword"
               class="form-input"
+              autocomplete="off"
               required
             />
             <p>Please enter your password</p>
           </div>
 
           <div class="user-info">
-            <label for="password">Confirm Password</label>
+            <label for="password"
+              ><i class="fas fa-lock"></i> Confirm Password</label
+            >
             <br />
             <input
               type="password"
               name="password"
-              id="password"
+              id="confirmPassword"
               class="form-input"
+              autocomplete="off"
               required
             />
             <p>Please confirm your password</p>
           </div>
 
-          <button id="registerSubmitBtn" class="btn">SUBMIT</button>
+          <button id="registerSubmitBtn" class="btn" type="submit">
+            SUBMIT
+          </button>
         </form>
       </div>
     </div>
 
-    <div class="login-modal">
+    <div id="logInFormModal" class="login-modal">
       <div class="container flex-center">
-        <form action="" method="POST">
-          <h2>REGISTER</h2>
+        <form id="logForm" action="" method="POST" class="form login-form">
+          <h2>LOGIN</h2>
           <div class="user-info">
-            <label for="email">Email</label>
+            <label for="email"><i class="fas fa-envelope"></i> Email</label>
             <br />
             <input
               type="email"
               name="email"
-              id="email"
+              id="logInEmail"
               class="form-input"
+              autocomplete="username"
               required
             />
             <p>Please enter your email</p>
           </div>
 
           <div class="user-info">
-            <label for="user-password">Password</label>
+            <label for="user-password"
+              ><i class="fas fa-lock"></i> Password</label
+            >
             <br />
             <input
               type="password"
               name="password"
-              id="password"
+              id="logInPassword"
               class="form-input"
+              autocomplete="current-password"
               required
             />
             <p>Please enter your password</p>
           </div>
 
-          <button id="loginSubmitBtn" class="btn">SUBMIT</button>
+          <button id="loginSubmitBtn" class="btn" type="submit">LOGIN</button>
         </form>
       </div>
     </div>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

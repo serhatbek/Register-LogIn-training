@@ -22,10 +22,11 @@ html {
 body {
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 0.2rem;
+  overflow: hidden;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0.6rem;
 }
@@ -124,7 +125,7 @@ nav {
 
 .register__wrapper {
   height: 90vh;
-  background-image: url(/assets/img/bg-image.png);
+  background-image: url(../img/bg-image.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -132,7 +133,7 @@ nav {
   /* clip-path: polygon(0 0, 100% 31%, 100% 85%, 0% 100%); */
 }
 
-form {
+.form {
   width: 50%;
   background-color: var(--form-color);
   border-radius: 0.6rem;
@@ -149,9 +150,10 @@ form {
   /* opacity: 0.9; */
 }
 
-form h2 {
+.form h2 {
   font-size: 1.5rem;
   letter-spacing: 0.6rem;
+  font-weight: 900;
 }
 
 .user-info {
@@ -192,5 +194,13 @@ form h2 {
   align-items: center;
   color: var(--text-color);
   font-size: 5rem;
-  transform: translate(-50% 050%);
+}
+
+.login-form {
+  width: 400px;
+  font-weight: 400;
+}
+
+.login-modal.show {
+  display: flex;
 }
